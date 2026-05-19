@@ -50,16 +50,18 @@ Browse nearby gyms, football academies, badminton clubs, and combat sports centr
 
 ---
 
+
+
 ## 📸 Screenshots
 
-<img src="screenshots/Screenshot 2026-05-20 020130.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020143.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020154.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020201.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020211.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020229.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020300.png" width="800" />
-<img src="screenshots/Screenshot 2026-05-20 020321.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020130.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020143.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020154.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020201.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020211.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020229.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020300.png" width="800" />
+<img src="frontend/screenshots/Screenshot 2026-05-20 020321.png" width="800" />
 
 ## 🛠️ Tech Stack
 
