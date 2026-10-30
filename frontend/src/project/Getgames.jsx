@@ -210,24 +210,32 @@ const Getgames = () => {
   const [search,  setSearch]  = useState('')
 
   useEffect(() => {
-    const fetchdata = async () => {
-      try {
-        const res = await axios.get('http://localhost:8081/game')
-        setData(res.data)
-      } catch (err) {
-        setError('Could not load games. Make sure your server is running.')
-      } finally {
-        setLoading(false)
-      }
+  const fetchdata = async () => {
+    try {
+      console.log("API URL:", import.meta.env.VITE_API_URL);
+
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/game`
+      );
+
+      console.log("Games received:", res.data);
+      setData(res.data);
+    } catch (err) {
+      console.error("API Error:", err);
+      setError('Could not load games. Make sure your server is running.');
+    } finally {
+      setLoading(false);
     }
-    fetchdata()
-  }, [])
+  };
+
+  fetchdata();
+}, []);
 
   const handleJoin = async (id) => {
     if (!id || joined.includes(id)) return          // ✅ block duplicate joins
     setJoining(id)
     try {
-      await axios.put(`http://localhost:8081/game/join/${id}`)
+      await axios.put(`${import.meta.env.VITE_API_URL}/game/join/${id}`);
       setJoined(prev => [...prev, id])
       setData(prev => prev.map(g =>
         g.id === id                                  // ✅ Java uses .id not ._id

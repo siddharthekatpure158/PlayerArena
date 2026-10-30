@@ -43,7 +43,7 @@ const Creategame = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:8081/game', data);
+      await axios.post(`${import.meta.env.VITE_API_URL}/game`, data);
       setSubmitted(true);
     } catch (error) {
       console.error(error);

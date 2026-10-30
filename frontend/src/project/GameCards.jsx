@@ -43,7 +43,7 @@ const GameCards = () => {
   const [error, setError]   = useState('')
 
   useEffect(() => {
-    axios.get('http://localhost:8081/game')
+    axios.get(`${import.meta.env.VITE_API_URL}/game`)
       .then(res => setGames(res.data.slice(0, 3)))   // show first 3
       .catch(() => setError('Could not load games.'))
       .finally(() => setLoading(false))
